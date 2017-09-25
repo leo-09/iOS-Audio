@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gt3-hW-RjQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kGT-xz-4r8">
+            <objects>
+                <viewController id="Gt3-hW-RjQ" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r4P-ST-avf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xbl-2T-OMI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PJ7-gK-ltn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="QYK-2T-hZg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="kn2-07-qea">
+                                <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Hrz-on-drv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Duy-VP-abN">
+                                <rect key="frame" x="165" y="570" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="qgl-Mp-kAV"/>
+                                    <constraint firstAttribute="width" constant="45" id="rSU-84-KZJ"/>
+                                </constraints>
+                                <state key="normal" image="btn_play"/>
+                                <connections>
+                                    <action selector="onPlay:" destination="Gt3-hW-RjQ" eventType="touchUpInside" id="YyT-jd-SnR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Duy-VP-abN" firstAttribute="centerY" secondItem="kn2-07-qea" secondAttribute="centerY" id="EgY-46-IJU"/>
+                            <constraint firstItem="Duy-VP-abN" firstAttribute="centerX" secondItem="kn2-07-qea" secondAttribute="centerX" id="FQ0-Ow-fWj"/>
+                            <constraint firstAttribute="trailing" secondItem="QYK-2T-hZg" secondAttribute="trailing" id="NfF-LX-9WV"/>
+                            <constraint firstItem="Xbl-2T-OMI" firstAttribute="top" secondItem="kn2-07-qea" secondAttribute="bottom" id="Sy0-U4-uFK"/>
+                            <constraint firstItem="QYK-2T-hZg" firstAttribute="top" secondItem="PJ7-gK-ltn" secondAttribute="top" id="bhg-a1-lGo"/>
+                            <constraint firstAttribute="trailing" secondItem="kn2-07-qea" secondAttribute="trailing" id="fWD-Ug-d78"/>
+                            <constraint firstItem="Xbl-2T-OMI" firstAttribute="top" secondItem="QYK-2T-hZg" secondAttribute="bottom" id="gcp-et-Hc0"/>
+                            <constraint firstItem="QYK-2T-hZg" firstAttribute="leading" secondItem="PJ7-gK-ltn" secondAttribute="leading" id="lFN-Lv-AoJ"/>
+                            <constraint firstItem="kn2-07-qea" firstAttribute="leading" secondItem="PJ7-gK-ltn" secondAttribute="leading" id="mjQ-Kb-PEb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PK5-Tz-bt5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="750" height="1334"/>
+        <image name="background_bottom" width="750" height="424"/>
+        <image name="btn_play" width="128" height="128"/>
+    </resources>
+</document>

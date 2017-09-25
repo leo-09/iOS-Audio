@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A3498971E8CBA8400822CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3498961E8CBA8400822CFD /* main.m */; };
+		8A34989A1E8CBA8400822CFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3498991E8CBA8400822CFD /* AppDelegate.m */; };
+		8A34989D1E8CBA8400822CFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A34989C1E8CBA8400822CFD /* ViewController.m */; };
+		8A3498A01E8CBA8400822CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A34989E1E8CBA8400822CFD /* Main.storyboard */; };
+		8A3498A21E8CBA8400822CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3498A11E8CBA8400822CFD /* Assets.xcassets */; };
+		8A3498A51E8CBA8400822CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3498A31E8CBA8400822CFD /* LaunchScreen.storyboard */; };
+		8A3498B01E8CBA8400822CFD /* AudioUnitMixerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3498AF1E8CBA8400822CFD /* AudioUnitMixerDemoTests.m */; };
+		8A3498BB1E8CBA8400822CFD /* AudioUnitMixerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3498BA1E8CBA8400822CFD /* AudioUnitMixerDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A3498AC1E8CBA8400822CFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A34988A1E8CBA8400822CFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A3498911E8CBA8400822CFD;
+			remoteInfo = AudioUnitMixerDemo;
+		};
+		8A3498B71E8CBA8400822CFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A34988A1E8CBA8400822CFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A3498911E8CBA8400822CFD;
+			remoteInfo = AudioUnitMixerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A3498921E8CBA8400822CFD /* AudioUnitMixerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioUnitMixerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3498961E8CBA8400822CFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A3498981E8CBA8400822CFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A3498991E8CBA8400822CFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A34989B1E8CBA8400822CFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8A34989C1E8CBA8400822CFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8A34989F1E8CBA8400822CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A3498A11E8CBA8400822CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A3498A41E8CBA8400822CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A3498A61E8CBA8400822CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A3498AB1E8CBA8400822CFD /* AudioUnitMixerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioUnitMixerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3498AF1E8CBA8400822CFD /* AudioUnitMixerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioUnitMixerDemoTests.m; sourceTree = "<group>"; };
+		8A3498B11E8CBA8400822CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A3498B61E8CBA8400822CFD /* AudioUnitMixerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioUnitMixerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3498BA1E8CBA8400822CFD /* AudioUnitMixerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioUnitMixerDemoUITests.m; sourceTree = "<group>"; };
+		8A3498BC1E8CBA8400822CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A34988F1E8CBA8400822CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3498A81E8CBA8400822CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3498B31E8CBA8400822CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A3498891E8CBA8400822CFD = {
+			isa = PBXGroup;
+			children = (
+				8A3498941E8CBA8400822CFD /* AudioUnitMixerDemo */,
+				8A3498AE1E8CBA8400822CFD /* AudioUnitMixerDemoTests */,
+				8A3498B91E8CBA8400822CFD /* AudioUnitMixerDemoUITests */,
+				8A3498931E8CBA8400822CFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A3498931E8CBA8400822CFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A3498921E8CBA8400822CFD /* AudioUnitMixerDemo.app */,
+				8A3498AB1E8CBA8400822CFD /* AudioUnitMixerDemoTests.xctest */,
+				8A3498B61E8CBA8400822CFD /* AudioUnitMixerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A3498941E8CBA8400822CFD /* AudioUnitMixerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8A3498981E8CBA8400822CFD /* AppDelegate.h */,
+				8A3498991E8CBA8400822CFD /* AppDelegate.m */,
+				8A34989B1E8CBA8400822CFD /* ViewController.h */,
+				8A34989C1E8CBA8400822CFD /* ViewController.m */,
+				8A34989E1E8CBA8400822CFD /* Main.storyboard */,
+				8A3498A11E8CBA8400822CFD /* Assets.xcassets */,
+				8A3498A31E8CBA8400822CFD /* LaunchScreen.storyboard */,
+				8A3498A61E8CBA8400822CFD /* Info.plist */,
+				8A3498951E8CBA8400822CFD /* Supporting Files */,
+			);
+			path = AudioUnitMixerDemo;
+			sourceTree = "<group>";
+		};
+		8A3498951E8CBA8400822CFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A3498961E8CBA8400822CFD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A3498AE1E8CBA8400822CFD /* AudioUnitMixerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A3498AF1E8CBA8400822CFD /* AudioUnitMixerDemoTests.m */,
+				8A3498B11E8CBA8400822CFD /* Info.plist */,
+			);
+			path = AudioUnitMixerDemoTests;
+			sourceTree = "<group>";
+		};
+		8A3498B91E8CBA8400822CFD /* AudioUnitMixerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A3498BA1E8CBA8400822CFD /* AudioUnitMixerDemoUITests.m */,
+				8A3498BC1E8CBA8400822CFD /* Info.plist */,
+			);
+			path = AudioUnitMixerDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A3498911E8CBA8400822CFD /* AudioUnitMixerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3498BF1E8CBA8400822CFD /* Build configuration list for PBXNativeTarget "AudioUnitMixerDemo" */;
+			buildPhases = (
+				8A34988E1E8CBA8400822CFD /* Sources */,
+				8A34988F1E8CBA8400822CFD /* Frameworks */,
+				8A3498901E8CBA8400822CFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioUnitMixerDemo;
+			productName = AudioUnitMixerDemo;
+			productReference = 8A3498921E8CBA8400822CFD /* AudioUnitMixerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A3498AA1E8CBA8400822CFD /* AudioUnitMixerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3498C21E8CBA8400822CFD /* Build configuration list for PBXNativeTarget "AudioUnitMixerDemoTests" */;
+			buildPhases = (
+				8A3498A71E8CBA8400822CFD /* Sources */,
+				8A3498A81E8CBA8400822CFD /* Frameworks */,
+				8A3498A91E8CBA8400822CFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A3498AD1E8CBA8400822CFD /* PBXTargetDependency */,
+			);
+			name = AudioUnitMixerDemoTests;
+			productName = AudioUnitMixerDemoTests;
+			productReference = 8A3498AB1E8CBA8400822CFD /* AudioUnitMixerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A3498B51E8CBA8400822CFD /* AudioUnitMixerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3498C51E8CBA8400822CFD /* Build configuration list for PBXNativeTarget "AudioUnitMixerDemoUITests" */;
+			buildPhases = (
+				8A3498B21E8CBA8400822CFD /* Sources */,
+				8A3498B31E8CBA8400822CFD /* Frameworks */,
+				8A3498B41E8CBA8400822CFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A3498B81E8CBA8400822CFD /* PBXTargetDependency */,
+			);
+			name = AudioUnitMixerDemoUITests;
+			productName = AudioUnitMixerDemoUITests;
+			productReference = 8A3498B61E8CBA8400822CFD /* AudioUnitMixerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A34988A1E8CBA8400822CFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ingenic;
+				TargetAttributes = {
+					8A3498911E8CBA8400822CFD = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = WS7Q6CWX7Q;
+						ProvisioningStyle = Automatic;
+					};
+					8A3498AA1E8CBA8400822CFD = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = WS7Q6CWX7Q;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8A3498911E8CBA8400822CFD;
+					};
+					8A3498B51E8CBA8400822CFD = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = WS7Q6CWX7Q;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8A3498911E8CBA8400822CFD;
+					};
+				};
+			};
+			buildConfigurationList = 8A34988D1E8CBA8400822CFD /* Build configuration list for PBXProject "AudioUnitMixerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A3498891E8CBA8400822CFD;
+			productRefGroup = 8A3498931E8CBA8400822CFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A3498911E8CBA8400822CFD /* AudioUnitMixerDemo */,
+				8A3498AA1E8CBA8400822CFD /* AudioUnitMixerDemoTests */,
+				8A3498B51E8CBA8400822CFD /* AudioUnitMixerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A3498901E8CBA8400822CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3498A51E8CBA8400822CFD /* LaunchScreen.storyboard in Resources */,
+				8A3498A21E8CBA8400822CFD /* Assets.xcassets in Resources */,
+				8A3498A01E8CBA8400822CFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3498A91E8CBA8400822CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3498B41E8CBA8400822CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A34988E1E8CBA8400822CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A34989D1E8CBA8400822CFD /* ViewController.m in Sources */,
+				8A34989A1E8CBA8400822CFD /* AppDelegate.m in Sources */,
+				8A3498971E8CBA8400822CFD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3498A71E8CBA8400822CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3498B01E8CBA8400822CFD /* AudioUnitMixerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3498B21E8CBA8400822CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3498BB1E8CBA8400822CFD /* AudioUnitMixerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A3498AD1E8CBA8400822CFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A3498911E8CBA8400822CFD /* AudioUnitMixerDemo */;
+			targetProxy = 8A3498AC1E8CBA8400822CFD /* PBXContainerItemProxy */;
+		};
+		8A3498B81E8CBA8400822CFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A3498911E8CBA8400822CFD /* AudioUnitMixerDemo */;
+			targetProxy = 8A3498B71E8CBA8400822CFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A34989E1E8CBA8400822CFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A34989F1E8CBA8400822CFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A3498A31E8CBA8400822CFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3498A41E8CBA8400822CFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A3498BD1E8CBA8400822CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A3498BE1E8CBA8400822CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A3498C01E8CBA8400822CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WS7Q6CWX7Q;
+				INFOPLIST_FILE = AudioUnitMixerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenic.AudioUnitMixerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A3498C11E8CBA8400822CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WS7Q6CWX7Q;
+				INFOPLIST_FILE = AudioUnitMixerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenic.AudioUnitMixerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8A3498C31E8CBA8400822CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WS7Q6CWX7Q;
+				INFOPLIST_FILE = AudioUnitMixerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenic.AudioUnitMixerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioUnitMixerDemo.app/AudioUnitMixerDemo";
+			};
+			name = Debug;
+		};
+		8A3498C41E8CBA8400822CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WS7Q6CWX7Q;
+				INFOPLIST_FILE = AudioUnitMixerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenic.AudioUnitMixerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioUnitMixerDemo.app/AudioUnitMixerDemo";
+			};
+			name = Release;
+		};
+		8A3498C61E8CBA8400822CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WS7Q6CWX7Q;
+				INFOPLIST_FILE = AudioUnitMixerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenic.AudioUnitMixerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AudioUnitMixerDemo;
+			};
+			name = Debug;
+		};
+		8A3498C71E8CBA8400822CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WS7Q6CWX7Q;
+				INFOPLIST_FILE = AudioUnitMixerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenic.AudioUnitMixerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AudioUnitMixerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A34988D1E8CBA8400822CFD /* Build configuration list for PBXProject "AudioUnitMixerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3498BD1E8CBA8400822CFD /* Debug */,
+				8A3498BE1E8CBA8400822CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3498BF1E8CBA8400822CFD /* Build configuration list for PBXNativeTarget "AudioUnitMixerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3498C01E8CBA8400822CFD /* Debug */,
+				8A3498C11E8CBA8400822CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8A3498C21E8CBA8400822CFD /* Build configuration list for PBXNativeTarget "AudioUnitMixerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3498C31E8CBA8400822CFD /* Debug */,
+				8A3498C41E8CBA8400822CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8A3498C51E8CBA8400822CFD /* Build configuration list for PBXNativeTarget "AudioUnitMixerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3498C61E8CBA8400822CFD /* Debug */,
+				8A3498C71E8CBA8400822CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A34988A1E8CBA8400822CFD /* Project object */;
+}
