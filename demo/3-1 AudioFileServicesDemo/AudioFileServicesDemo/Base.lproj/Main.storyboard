@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1bR-Nz-wMR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GPf-5a-k53">
+            <objects>
+                <viewController id="1bR-Nz-wMR" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lyw-rq-Flv"/>
+                        <viewControllerLayoutGuide type="bottom" id="tC9-Gf-Pf8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8zd-l6-roE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jVP-kM-zOC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feX-yE-wbg">
+                                <rect key="frame" x="339" y="28" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Ltp-IP-DgP"/>
+                                    <constraint firstAttribute="height" constant="20" id="ySx-Jz-Lfw"/>
+                                </constraints>
+                                <state key="normal" image="btn_drawer_n"/>
+                                <connections>
+                                    <action selector="onPick:" destination="1bR-Nz-wMR" eventType="touchUpInside" id="V8Z-Bw-TrY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-cd-flw">
+                                <rect key="frame" x="16" y="100" width="63" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NXb-bV-Ndo"/>
+                                </constraints>
+                                <state key="normal" title="OpenFile"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onOpenFile:" destination="1bR-Nz-wMR" eventType="touchUpInside" id="7Wa-LJ-T0M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ur3-84-1OF">
+                                <rect key="frame" x="16" y="160" width="105" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sda-HT-Y5S"/>
+                                </constraints>
+                                <state key="normal" title="ReadProperty"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onReadProperty:" destination="1bR-Nz-wMR" eventType="touchUpInside" id="X4k-4T-Lpl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeF-Tc-1Qz">
+                                <rect key="frame" x="16" y="220" width="114" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ReadUserData"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onReadUserData:" destination="1bR-Nz-wMR" eventType="touchUpInside" id="lm5-aK-9DM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EX-OG-jo2">
+                                <rect key="frame" x="296" y="100" width="63" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CloseFile"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCloseFile:" destination="1bR-Nz-wMR" eventType="touchUpInside" id="HpD-OK-S3m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkF-HI-2P1">
+                                <rect key="frame" x="254" y="160" width="105" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ReadGlobalInfo"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onReadGlobalInfo:" destination="1bR-Nz-wMR" eventType="touchUpInside" id="vtm-O6-7YD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiP-Ym-Kmy">
+                                <rect key="frame" x="245" y="220" width="114" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ReadFileContent"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onReadFileContent:" destination="1bR-Nz-wMR" eventType="touchUpInside" id="Yml-aB-cza"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tIA-cd-flw" firstAttribute="width" secondItem="9EX-OG-jo2" secondAttribute="width" id="2EI-aN-6Gc"/>
+                            <constraint firstItem="XeF-Tc-1Qz" firstAttribute="leading" secondItem="8zd-l6-roE" secondAttribute="leading" constant="16" id="3th-zd-d5u"/>
+                            <constraint firstItem="9EX-OG-jo2" firstAttribute="height" secondItem="tIA-cd-flw" secondAttribute="height" id="8LU-Tm-P6N"/>
+                            <constraint firstItem="ur3-84-1OF" firstAttribute="leading" secondItem="8zd-l6-roE" secondAttribute="leading" constant="16" id="9Bp-YG-zaZ"/>
+                            <constraint firstItem="XeF-Tc-1Qz" firstAttribute="width" secondItem="BiP-Ym-Kmy" secondAttribute="width" id="CnX-gg-3Ga"/>
+                            <constraint firstAttribute="trailing" secondItem="BiP-Ym-Kmy" secondAttribute="trailing" constant="16" id="Hyl-He-DDK"/>
+                            <constraint firstItem="jVP-kM-zOC" firstAttribute="leading" secondItem="8zd-l6-roE" secondAttribute="leading" id="IFe-eM-sl4"/>
+                            <constraint firstItem="feX-yE-wbg" firstAttribute="top" secondItem="Lyw-rq-Flv" secondAttribute="bottom" constant="8" id="Iw0-h5-1Uu"/>
+                            <constraint firstAttribute="trailing" secondItem="jVP-kM-zOC" secondAttribute="trailing" id="M8D-iQ-POW"/>
+                            <constraint firstItem="9EX-OG-jo2" firstAttribute="top" secondItem="Lyw-rq-Flv" secondAttribute="bottom" constant="80" id="QE5-CL-mmt"/>
+                            <constraint firstItem="tC9-Gf-Pf8" firstAttribute="top" secondItem="jVP-kM-zOC" secondAttribute="bottom" id="WYD-Kp-hpN"/>
+                            <constraint firstItem="jVP-kM-zOC" firstAttribute="top" secondItem="8zd-l6-roE" secondAttribute="top" id="aZh-W5-6tW"/>
+                            <constraint firstItem="tIA-cd-flw" firstAttribute="top" secondItem="Lyw-rq-Flv" secondAttribute="bottom" constant="80" id="bBd-MN-qA6"/>
+                            <constraint firstItem="pkF-HI-2P1" firstAttribute="height" secondItem="ur3-84-1OF" secondAttribute="height" id="cYY-Yv-oFy"/>
+                            <constraint firstItem="tIA-cd-flw" firstAttribute="leading" secondItem="8zd-l6-roE" secondAttribute="leading" constant="16" id="gW4-3M-qb6"/>
+                            <constraint firstItem="ur3-84-1OF" firstAttribute="top" secondItem="tIA-cd-flw" secondAttribute="bottom" constant="30" id="hJd-U7-jjB"/>
+                            <constraint firstItem="BiP-Ym-Kmy" firstAttribute="top" secondItem="pkF-HI-2P1" secondAttribute="bottom" constant="30" id="hwS-TY-x5o"/>
+                            <constraint firstItem="XeF-Tc-1Qz" firstAttribute="top" secondItem="ur3-84-1OF" secondAttribute="bottom" constant="30" id="jrG-qc-9bw"/>
+                            <constraint firstItem="pkF-HI-2P1" firstAttribute="top" secondItem="9EX-OG-jo2" secondAttribute="bottom" constant="30" id="knC-bG-6Jd"/>
+                            <constraint firstAttribute="trailing" secondItem="feX-yE-wbg" secondAttribute="trailing" constant="16" id="lTC-IH-Yx7"/>
+                            <constraint firstItem="XeF-Tc-1Qz" firstAttribute="height" secondItem="tIA-cd-flw" secondAttribute="height" id="rt2-rZ-Dhh"/>
+                            <constraint firstItem="BiP-Ym-Kmy" firstAttribute="height" secondItem="tIA-cd-flw" secondAttribute="height" id="u0e-zN-4Qp"/>
+                            <constraint firstAttribute="trailing" secondItem="9EX-OG-jo2" secondAttribute="trailing" constant="16" id="v7V-EJ-c03"/>
+                            <constraint firstItem="ur3-84-1OF" firstAttribute="width" secondItem="pkF-HI-2P1" secondAttribute="width" id="xVS-f5-VDh"/>
+                            <constraint firstAttribute="trailing" secondItem="pkF-HI-2P1" secondAttribute="trailing" constant="16" id="z42-wI-F8F"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWG-Hc-CVo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="750" height="1334"/>
+        <image name="btn_drawer_n" width="72" height="50"/>
+    </resources>
+</document>
