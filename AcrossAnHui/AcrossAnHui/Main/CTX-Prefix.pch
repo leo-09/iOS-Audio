@@ -1,0 +1,94 @@
+//
+//  CTX_Prefix_pch.pch
+//  AcrossAnHui
+//
+//  Created by liyy on 17/4/26.
+//  Copyright © 2017年 ctx. All rights reserved.
+//
+
+#ifndef CTX_Prefix_pch
+#define CTX_Prefix_pch
+
+// ---------------- Self ----------------
+#define WeakSelf __weak typeof(self) weakSelf = self;
+#define CTXWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define CTXStrongSelf(type)  __strong typeof(type) type = weak##type;
+
+// ---------------- 屏幕宽高 ----------------
+#define CTXScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define CTXScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define CTXBarHeight 20
+#define CTXNavigationBarHeight 44
+#define CTXTabBarHeight 49
+
+// ---------------- 设置圆角和边框 ----------------
+#define CTXViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
+// ---------------- 沙盒目录文件 ----------------
+//获取temp
+#define CTXPathTemp NSTemporaryDirectory()
+//获取沙盒 Document
+#define CTXPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 Cache
+#define CTXPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+// ---------------- Masonry ----------------
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+// ----------------  设置颜色 ----------------
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define UIColorFromRGBA(rgbValue,trans) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:trans]
+
+#define CTXColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// ----------------  颜色代码 ----------------
+#define CTXThemeColor 0x229CFA
+// 背景颜色
+#define CTXBackGroundColor 0xeeeeee
+// 字体颜色
+#define CTXBaseFontColor 0x6c6c6c
+#define CTXTextBlackColor 0x333333
+#define CTXTextGrayColor 0x9FA1A1
+// 背景颜色
+#define CTXBaseViewColor 0xf4f4f4
+// 线条色
+#define CTXBLineViewColor 0xCCCCCC
+
+#define CTXTextFont 15.0
+
+// ----------------  登录成功的回调 ----------------
+typedef void (^GlobalLoginSuccessBlock)(id newToken);
+typedef void (^ClickListener)();
+
+#define toLoginTag @"toLoginTag"
+
+#define defaultCity @"合肥市"
+#define defaultProvice @"安徽省"
+#define defaultLatitude 31.84087375
+#define defaultLongitude 117.19698649
+
+// ----------------  NSLog ----------------
+#ifdef DEBUG
+    // 分别是方法地址，文件名，在文件的第几行，自定义输出内容
+    #define CTXLog( s, ... ) NSLog( @"<%p %@><%@:(%d)>： %@", self, NSStringFromClass([self class]), [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+    #define CTXLog( s, ... )
+#endif
+
+// ---------------- PNChart ----------------
+#define PieChartViewWH 125
+#define ParkPieChartViewWH 104
+
+// ---------------- YZPullDownMenu ----------------
+#define YZPullDownMenuHeight 50
+
+#endif /* CTX-CTX_Prefix_pch */
