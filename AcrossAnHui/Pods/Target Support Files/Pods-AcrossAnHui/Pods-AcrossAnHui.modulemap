@@ -1,6 +1,0 @@
-framework module Pods_AcrossAnHui {
-  umbrella header "Pods-AcrossAnHui-umbrella.h"
-
-  export *
-  module * { export * }
-}
